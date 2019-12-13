@@ -24,19 +24,22 @@ public class Death : MonoBehaviour
         {
             // add load death scene here
             //this restarts back from the start of the level
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("End");
+            //SceneManager.LoadScene(0);
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2"))
         {
             // add load death scene here
             //this restarts back from the start of the level
-            SceneManager.LoadScene(1);
+            //SceneManager.LoadScene(1);
+            SceneManager.LoadScene("End2");
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level3"))
         {
             // add load death scene here
             //this restarts back from the start of the level
-            SceneManager.LoadScene(3);
+            //SceneManager.LoadScene(3);
+            SceneManager.LoadScene("End3");
         }
     }
 

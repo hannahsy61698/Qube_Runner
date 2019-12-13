@@ -12,16 +12,18 @@ public class goToNextLevel : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level1"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Continue");
+            //SceneManager.LoadScene("Level2");
         }
 
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("3Cont");
+            //SceneManager.LoadScene("Level3");
         }
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2"))
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level3"))
         {
-
+            SceneManager.LoadScene("Win");
             //Finish Screen
             //SceneManager.LoadScene(2);
         }
